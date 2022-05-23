@@ -412,7 +412,7 @@ footer div.social-midia{
 
 @media screen and (max-width: 445px){
     div.post-text h2{
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
 
     a.know-more{
@@ -431,7 +431,11 @@ footer div.social-midia{
     }
 }
 
-@media screen and (max-width: 410px){
+@media screen and (max-width: 420px){
+    div.post-text h2{
+        font-size: 1.3em;
+    }
+
     div.post-text p{
         font-size: 1em;
     }
