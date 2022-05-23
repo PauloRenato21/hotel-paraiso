@@ -128,15 +128,18 @@ div.article-meet-hotel > p, article.highlights-hotel > p, div.newsletter p{
 span.line{
     width: 15vw;
     border: 1px solid black;
+    background-color: black;
     margin-bottom: 10vh;
 }
 
 span.line-highlights{
     border-color: white;
+    background-color: white;
 }
 
 span.line-newsletter{
     border-color: #c3c63b;
+    background-color: #c3c63b;
 }
 
 div.article-meet-hotel div.itacare-photos{
@@ -404,5 +407,37 @@ footer div.social-midia{
 
     section.highlights-hotel > h2{
         font-size: 1.7em;
+    }
+}
+
+@media screen and (max-width: 445px){
+    div.post-text h2{
+        font-size: 1.3em;
+    }
+
+    a.know-more{
+        padding: 15px 20px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    section.highlights-hotel > h2, section.meet-hotel > h2, div.newsletter h4{
+        font-size: 1.5em;
+    }
+
+    article.highlights-hotel > p{
+        width: 100vw;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 410px){
+    div.post-text p{
+        font-size: 1em;
+    }
+
+    a.know-more{
+        padding: 10px 10px;
+        font-size: 0.9em;
     }
 }
