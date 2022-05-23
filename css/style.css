@@ -1,0 +1,408 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+header{
+    padding: 15px;
+}
+
+div.header-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+header div.header-logo{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+header div.header-logo > a img{
+    width: 100%;
+}
+
+div.header-box nav{
+    width: 40vw;
+}
+
+div.header-box nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+div.header-box nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    font-size: 1em;
+    color: rgb(90, 90, 90);
+}
+
+div.header-box nav ul li:hover{
+    color: black;
+}
+
+section > div.post-welcome{
+    background: url("../images/hero.jpg") center top no-repeat fixed;
+    background-size: cover;
+    height: 88vh;
+    min-height: 580px;
+}
+
+div.post-text{
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.post-text h2{
+    font-size: 51px;
+    margin: 10px 0px;
+}
+
+div.post-text p{
+    font-size: 2em;
+    margin: 10px 0px;
+}
+
+a.know-more{
+    margin-top: 5px;
+    padding: 25px 50px;
+    color: black;
+    text-transform: uppercase;
+    background-color: #efefef;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+a.know-more:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+section.meet-hotel{
+    text-align: center;
+    margin: 50px 0px;
+}
+
+div.article-meet-hotel{
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.meet-hotel > h2, section.highlights-hotel > h2, div.newsletter h4{
+    font-size: 2em;
+}
+
+section.highlights-hotel > h2, div.newsletter h4{
+    margin-bottom: 5vh;
+}
+
+div.article-meet-hotel > p, article.highlights-hotel > p, div.newsletter p{
+    text-align: center;
+    margin-bottom: 8vh;
+}
+
+span.line{
+    width: 15vw;
+    border: 1px solid black;
+    margin-bottom: 10vh;
+}
+
+span.line-highlights{
+    border-color: white;
+}
+
+span.line-newsletter{
+    border-color: #c3c63b;
+}
+
+div.article-meet-hotel div.itacare-photos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+}
+
+div.itacare-photos div{
+    flex-basis: 40%;
+    height: 300px;
+    padding: 5px 20px;
+    flex-grow: 0;
+    background: left top no-repeat content-box;
+    background-size: cover;
+}
+
+div.itacare-photos div.photo01{
+    background-image: url('../images/itacare-01.jpg');
+}
+
+div.itacare-photos div.photo02{
+    background-image: url('../images/itacare-02.jpg');
+    flex-grow: 1;
+}
+
+div.itacare-photos div.photo03{
+    background-image: url('../images/itacare-03.jpg');
+    flex-grow: 1;
+}
+
+div.itacare-photos div.photo04{
+    background-image: url('../images/itacare-04.jpg');
+}
+
+section.highlights-hotel{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+    height: 100vh;
+    min-height: 550px;
+    background-color: #191c03;
+}
+
+section.highlights-hotel h2{
+    color: white;
+}
+
+section > article.highlights-hotel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+div.highlights{
+    width: 90vw;
+    display: flex;
+}
+
+div.location, div.gift, div.home{
+    width: 33%;
+    text-align: center;
+    padding: 10px;
+}
+
+.arrow-location, .box-gift, .house{
+    font-size: 4em;
+    color:#c3c63b;
+    margin-bottom: 20px;
+}
+
+div.location h3, div.gift h3, div.home h3{
+    color: #c3c63b;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+section.box-newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    min-height: 450px;
+    padding: 50px 0px;
+}
+
+section.box-newsletter > div.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.newsletter h4, div.newsletter p{
+    color: #c3c63b;
+}
+
+input.text-email{
+    width: 50vw;
+    padding: 20px;
+    border: 1px solid #c3c63b;
+    border-radius: 5px;
+}
+
+input.cadastrar{
+    width: 10vw;
+    height: 55px;
+    background-color: #c3c63b;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+input.cadastrar:hover{
+    cursor: pointer;
+}
+
+footer{
+    height: 30vh;
+    min-height: 180px;
+    padding: 20px 0px;
+    background-color: #191c03;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #b2b535;
+}
+
+footer div.social-midia{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/*Media Querrys*/
+
+@media screen and (max-width:1020px){
+    div.post-text h2{
+        font-size: 2.5em;
+    }
+
+    div.post-text p{
+        font-size: 1.5em;
+    }
+
+    button.know-more{
+        padding: 20px 35px;
+    }
+
+    div.article-meet-hotel div.itacare-photos{
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    div.itacare-photos div{
+        flex-basis: auto;
+        height: 450px;
+        padding: 5px 0px;
+        background-position: center center;
+    }
+
+    article.highlights-hotel > p{
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    header div.header-logo{
+        margin-left: 0px;
+    }
+
+    div.newsletter p{
+        width: 90vw;
+    }
+
+    form.form-email{
+        display: flex;
+        flex-direction: column;
+    }
+
+    form.form-email input:first-child{
+        margin-bottom: 10px;
+    }
+
+    input.cadastrar{
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section.highlights-hotel{
+        height: auto;
+    }
+
+    div.highlights{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.location, div.gift, div.home{
+        width: 50%;
+        text-align: center;
+        padding: 30px 0px;
+    }
+}
+
+@media screen and (max-width: 790px){
+    div.post-text h2{
+        font-size: 2em;
+    }
+
+    div.post-text p{
+        font-size: 1.3em;
+    }
+ 
+    div.article-meet-hotel div.itacare-photos{
+        width: 90vw;
+    }
+
+    div.itacare-photos div{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    div.header-box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.header-box nav{
+        width: 100%;
+        padding: 15px 0px;
+    }
+
+    input.text-email, input.cadastrar{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 625px){
+    div.post-text h2{
+        font-size: 1.5em;
+    }
+
+    div.post-text p{
+        font-size: 1.2em;
+    }
+
+    a.know-more{
+        padding: 15px 25px;
+    }
+
+    div.article-meet-hotel div.itacare-photos{
+        width: 80vw;
+    }
+
+    div.itacare-photos div{
+        height: 300px;
+    }
+
+    section.highlights-hotel > h2{
+        font-size: 1.7em;
+    }
+}
